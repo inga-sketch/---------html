@@ -12,7 +12,7 @@
 init local rep       commit -
 |                       |
 v                       v
-x                        x
+x                       x
 
 
 
