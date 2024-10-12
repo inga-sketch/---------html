@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../MULTI-PAGE"
+		},
+		{
+			"path": "../MULTIPAGE-TOGGLE"
+		},
+		{
+			"path": "../XML"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MULTI-PAGE"
+	}
+}
