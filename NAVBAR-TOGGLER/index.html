@@ -11,12 +11,6 @@
         }
         .menu {
             background-color: #234;
-            margin-top: -210px;
-            transition: 1s;
-
-        }
-        .menu:target {
-            margin-top:0 ;
         }
         .menu-title {
            margin: 0;  
@@ -25,14 +19,23 @@
         }
         .menu-list {
             list-style: none;
-            margin: 0;
+            margin: 0px ;
             padding: 0;
+            display: inline-block;
+            width: 90px;
+            vertical-align: middle;
+            margin-left: -90px;
+            transition: 1s;
+        }
+        .menu-list:target {
+           margin-left: 0px;
         }
         a {
             text-decoration: none;
             color: #ddd;
             padding: 5px 10px;
-            display: block;
+            display: inline-block;
+            vertical-align: top;
             border-bottom: 1px solid #345;
         }
         li:first-child {
@@ -59,7 +62,12 @@
             text-align: center;
             padding: 0;
             border-radius: 30px;
-            margin-left: 25px;     
+            margin-left: 25px; 
+            vertical-align: middle;   
+        }
+        .toggler:hover {
+
+
         }
         .toggler::before {
             content: none;
@@ -68,17 +76,17 @@
     </style>
 </head>
 <body>
-    <nav class="menu" id="navbar">
+    <nav class="menu">
         <h2 class="menu-title"> Our Cuisine</h2>
 
-        <ul class="menu-list">
+        <ul class="menu-list" id="navig">
             <li><a href="#">Salad</a></li>
             <li><a href="#">Soup</a></li>
             <li><a href="#">Pizza</a></li>
             <li><a class="not-available" href="#">Kebab</a></li>
             <li><a href="#">Burger</a></li>
         </ul>
-        <a class="toggler" href="#navbar">MENU</a>
+        <a class="toggler" href="#navig">MENU</a>
     </nav>
 </body>
 </html>
