@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Example</title>
+</head>
+<body>
+    <form action="thankyou.html">
+        <fieldset>
+        <h1>Apply for TRAINING</h1>
+        Your name: <input type="text" required><br/>
+        Your email: <input type="text"><br/>
+        phone: <input type="text" required><br/>
+        </fieldset>
+<!--HW:6 group inputs / selects
+fieldset -  element
+HW7:*form -> table -->
+        <br/>
+        <fieldset>
+        Choose course: <br/>
+        <select >
+            <option>HTML Basics Trainings</option>
+            <option>CSS Basics Trainings</option>
+        </select>
+        <br/>
+        Choose Hours: <br/>
+        <!--HW:5 group options in select (html5)
+        morning, evening-->
+        <ul>
+            <li>
+            Morning
+            </li>
+               <select>
+                    <option >09:00</option>
+                    <option >10:00</option>
+                </select>
+        <p>      
+            <li>
+            Evening
+            </li>
+                <select>
+                    <option >19:00</option>
+                    <option >20:00</option>
+                </select>
+        </select>
+        </ul>
+        </p>
+        </fieldset>
+        <br/>
+        <input type="checkbox" required>    I accept the <a href="terms.html" target="blank"> terms</a> and conditions
+
+        
+
+<!--HW1: Add a checkbox inpnut [x] i accept the terms and conditions
+    HW2: make required fullname, phone, checkbook 
+    HW3: terms-. <a> -> trms .html 
+    HW4: <a> ->  target-> new blank-->
+        <hr/>
+        <button>APPLY</button>
+    </form>
+    
+</body>
+
+</html> 

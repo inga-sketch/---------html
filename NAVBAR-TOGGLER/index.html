@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NavBar Toggler | CSS Psevdoselector</title>
+    <style>
+        body {
+            background-color: #456;
+            font-family: Helvetica;
+            margin: 0 ;
+        }
+        .menu {
+            background-color: #234;
+            margin-top: -210px;
+            transition: 1s;
+
+        }
+        .menu:target {
+            margin-top:0 ;
+        }
+        .menu-title {
+           margin: 0;  
+           color: white;
+           padding: 10px;
+        }
+        .menu-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #ddd;
+            padding: 5px 10px;
+            display: block;
+            border-bottom: 1px solid #345;
+        }
+        li:first-child {
+            border-top: 1px solid #345;
+        }
+        a:hover {
+            color: white;
+            background-color: #345;
+        }
+        a::before {
+            content: "✓";
+            color: green;
+            padding-right: 10px;
+        }
+        .not-available::before {
+            content:"✘" ;
+            color: red;
+        }
+        .toggler {
+            background-color: brown;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            padding: 0;
+            border-radius: 30px;
+            margin-left: 25px;     
+        }
+        .toggler::before {
+            content: none;
+        }
+       
+    </style>
+</head>
+<body>
+    <nav class="menu" id="navbar">
+        <h2 class="menu-title"> Our Cuisine</h2>
+
+        <ul class="menu-list">
+            <li><a href="#">Salad</a></li>
+            <li><a href="#">Soup</a></li>
+            <li><a href="#">Pizza</a></li>
+            <li><a class="not-available" href="#">Kebab</a></li>
+            <li><a href="#">Burger</a></li>
+        </ul>
+        <a class="toggler" href="#navbar">MENU</a>
+    </nav>
+</body>
+</html>
