@@ -1,0 +1,15 @@
+<?xml version="1.1"?> 
+<xml>
+#a cup
+<cup>
+   <size> 
+       <height>15cm<height/>
+       <diameter>10cm<diameter/>
+   <size/>
+   <description>
+       <weight>200gr<weight/>
+       <volume>0.5l<volume/>
+       <material>clay<material/>
+       <color>white<color/>
+   <description/>
+<cup/>

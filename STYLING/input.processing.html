@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Processing</title>
+    <style>
+        form {
+            border: 3px solid salmon;
+            padding: 10px;
+            border-radius: 7px;
+            background-color: aqua;
+            font-family: sans-serif;    
+        }
+        h2 {
+            color: #754646;
+        }
+        input {
+            padding: 10px;
+            border-color: #f40612;   
+        }  
+        input:focus {
+            border-bottom: 5px solid #5c0a0a;
+            outline: none;
+            background-color: rgb(249, 242, 236);
+        }
+        input:invalid {
+            border-bottom: 5px solid #3606f4;
+        }
+        button {
+            padding: 10px;
+            background-color: bisque;
+            color: #5c0a0a;
+            border: 1px solid sandybrown;
+        }
+        button:hover {
+            background-color: #c99351;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/subscribe">
+        <h2>subscribe to our newsletter</h2>
+        <input type="text" placeholder="you email address"
+        pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,10}$"
+        required>
+        <button>SUBSCRIBE</button>
+    </form>
+    
+</body>
+</html>

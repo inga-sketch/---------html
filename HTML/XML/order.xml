@@ -1,0 +1,66 @@
+<?xml version="1.0"?> 
+
+ <xml>
+## Client makes a food order
+
+<order>
+   <client>
+      <full-name>Mr Cat</full-name>
+      <ontact-phone>+1234567789 </ontact-phone>
+   </client>
+   <items>
+      <item>
+         <name>pizza</name>
+         <qantity>2</qantity>
+         <price> 50.00</price>
+      </item>
+
+      <item>
+         <name>Milk<name/>
+         <qantity>1<qantity/>
+         <price>10.00<price/>
+      <item/>
+   </items>
+   <delivery>
+      <address>under the bridge<address/>
+      <price>100.00<price/>
+      <discount>100.00<discount/>
+      <total>0.00<total/>
+
+   <delivery/>
+
+</order>
+ -------------
+
+ DICTIONARY
+ order -  order information for one Client
+ client - informatin about the client
+_________________________________________
+ order
+    ----client
+            ----full-name
+                        text
+    ----contacts
+            ----text
+    ----items
+            ----item
+                  name
+                     text 
+            ----qantity
+                      text
+            ----price
+                      text
+    ----delivery
+            ----address
+                       text
+            ----price
+                      text
+            ----discount
+                       text
+            ----total
+                      text                  
+    
+
+
+
+
