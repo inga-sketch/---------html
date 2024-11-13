@@ -35,18 +35,7 @@
 
         .cinema .main .row span:nth-child(5) {
             background-image: none;
-            border: 1px solid saddlebrown;
         }
-
-        .row:nth-child(2) {
-            border: 1px solid yellow;
-        }
-
-        .cinema .main .row:nth-child(3) span:nth-child(6) {
-            background-image: url(https://www.iconarchive.com/download/i47128/icons-land/vista-people/Age-Child-Female-Light.48.png);
-            background-repeat: no-repeat;
-        }
-
         .cinema .front span {
             background-image: url(https://www.iconarchive.com/download/i52652/archigraphs/modern-chairs/Magenta-Seat.72.png);
             display: inline-block;
@@ -54,23 +43,27 @@
             height: 72px;
         }
         .sold-f::after {
-           content: url(https://icons.iconarchive.com/icons/aha-soft/free-large-boss/128/Caucasian-Female-Boss-icon.png);
+           content: url(https://www.iconarchive.com/download/i47128/icons-land/vista-people/Age-Child-Female-Light.48.png);
+        }
+        .sold-m::after {
+            content: url(https://www.iconarchive.com/download/i47226/icons-land/vista-people/Person-Male-Light.48.png);
+        }
+        .main .row:nth-child(2) span:nth-child(6) {
+            border: 1px solid white;
         }
     </style>
 </head>
 <body>
     <h1>Advanced CSS Selectors <br> Cinema</h1>
     <div class="cinema">
-        <div class="vip">
-            <h2>VIP</h2>
+        <h2>VIP</h2>
+        <div class="vip">     
             <div class="row">
-                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7<br><img
-                        src="https://www.iconarchive.com/download/i47226/icons-land/vista-people/Person-Male-Light.48.png"
-                        alt=""></span>
+                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span class="sold-m">7</span>
             </div>
         </div>
-        <div class="main">
-            <h2>Main</h2>
+        <h2>Main</h2>
+        <div class="main">  
             <div class="row">
                 <span>1</span><span>2</span><span>3</span><span>4</span><span></span><span>5</span><span>6</span><span>7</span><span>8</span>
             </div>
@@ -81,8 +74,8 @@
                 <span>1</span><span>2</span><span>3</span><span>4</span><span></span><span>5</span><span>6</span><span>7</span><span>8</span>
             </div>
         </div>
+        <h2>Front rows</h2>
         <div class="front">
-            <h2>Front rows</h2>
             <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
             <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
         </div>
