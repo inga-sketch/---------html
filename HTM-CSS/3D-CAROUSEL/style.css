@@ -1,0 +1,40 @@
+body {
+    background-color: #234;
+}
+.carousel {
+    margin-top: 300px;
+    margin-left: 100px;
+    
+    width: 500px;
+    height: 700px;
+    perspective: 1000px;
+    
+}
+.carousel>div {
+  /*  border: 1px solid green;*/
+    width: 500px;
+    height: 0;
+    transition: 1s;
+}
+.carousel img {
+    border: 20px solid #ffffff; 
+}
+.carousel>div:nth-child(3) {
+   transform: rotateY(0);
+   transform-origin: left;
+}
+.carousel>div:nth-child(2) {
+   transform: rotateY(0);
+   transform-origin: left;
+   filter: brightness(70%);
+}
+.carousel>div:first-child {
+    transform: rotate(0);
+    filter: brightness(50%);
+}
+.carousel:hover>div:nth-child(3) {
+    transform: rotateY(-60deg);
+}
+.carousel:hover>div:nth-child(2) {
+    transform: rotateY(-45deg);
+}

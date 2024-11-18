@@ -13,7 +13,7 @@ body {
     width: 200px;
     height: 200px;
     box-sizing: border-box;
-   animation: rot-lg 10s infinite linear;
+    animation: rot-lg 10s infinite linear;
 }
 .preloader .sm  {
     border: 5px solid #13f2f6;
@@ -22,7 +22,7 @@ body {
     width: 160px;
     height: 160px;
     box-sizing: border-box;
-    margin: 15px;
+    margin: -180px 20px;
     animation: rot-sm 10s infinite linear;
     }
     @keyframes rot-lg {
