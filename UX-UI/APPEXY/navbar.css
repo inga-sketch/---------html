@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #0091ff;
+
+}
+a {
+    text-decoration: none;
+}
+nav {
+    background-color: aliceblue;
+    box-shadow:0 0 5px 0;
+    padding: 10px;
+}
+nav ul {
+    float:left;
+}
+nav ul li {
+    float: left;
+}
+.nav-logo {
+    float: left;
+    padding: 7px 0;
+    margin-right: 20px;
+}
+nav ul li a {
+    padding: 10px 0;
+    display: block;
+    margin-right: 20px;
+}
+.account-links {
+    float: right;
+}
+.account-links li:nth-child(2) a {
+    margin-right: 0;
+}
+.clear {
+    clear:both;
+}
+

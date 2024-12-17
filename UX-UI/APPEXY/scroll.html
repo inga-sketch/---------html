@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scroll Spy</title>
+    <link rel="stylesheet" href="scroll.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.1/simple-scrollspy.min.js" integrity="sha512-NNb5TgmE+7PHedvAWwPKZ/ukCGJciTHZ23ghPriEeEfcGySDBm9zIrjaXp/WNAUcVYhi5XhJ1rHveDKR35CInw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      window.onload = function () {
+        scrollSpy('#navbar', {
+          sectionClass: '.scrollspy',
+          menuActiveTarget: 'a',
+          offset: 100,
+          // smooth scroll
+          smoothScroll: true,
+          smoothScrollBehavior: function(element) {
+            console.log('run "smoothScrollBehavior"...', element)
+            element.scrollIntoView({ behavior: 'smooth' }) // default behavior
+          }
+        })
+      }
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="#s-1">Lorem</a>
+        <a href="#s-2">Opf</a>
+        <a href="#s-3">Jha</a>
+        <a href="#s-4">Uhda</a>
+        <a href="#s-5">Afhg</a>
+    </nav>
+    
+        <section id="s-1" class="scrollspy">
+            <h2>1. Lorem, im.</h2>
+        </section>
+        <section id="s-2" class="scrollspy">
+        <h2>2. Opf, im.</h2>
+    </section>
+    <section id="s-3" class="scrollspy">
+        <h2>3. Jha, ipsum.</h2>
+    </section>
+    <section id="s-4" class="scrollspy">
+        <h2>4. Uhda, sum.</h2>
+    </section>
+    <section id="s-5" class="scrollspy">
+        <h2>5. Afhg, psum.</h2>
+    </section>
+    
+</body>
+</html>

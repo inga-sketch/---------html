@@ -1,0 +1,32 @@
+body {
+    background-color: #333;
+    margin: 0;
+    color: white;
+    padding: 5px;
+}
+
+.cont {
+    border: 5px solid black;
+    height: 300px;
+    width: 300px;
+    padding: 5px;
+    margin: 20px;
+position: relative;
+
+}
+
+.cont .chaild-1 {
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    padding: 10px;
+}
+.cont .chaild-2 {
+    background-color: orangered;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom:-105px;
+    right: -105px;   
+}
+

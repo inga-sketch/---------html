@@ -1,0 +1,99 @@
+body {
+  background-color: white; 
+  font-family: "Poppins", sans-serif;
+  margin: 80px 0;  
+}
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+.price .container header {
+  text-align: center;
+}
+.price .container h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700px;
+}
+.price .container p {
+  font-family: "Roboto";
+  font-size: 16px;
+  margin:0 0 40px 0;
+  font-weight: 400;
+  font-style: normal;
+  color: #777;
+}
+.price .container h1, h2 {
+  color: #444;
+  font-style: normal;
+}
+.price .container hr {
+  margin: 20px;
+}
+.price .container div {
+  display: inline-block;
+  margin: 16px;
+  padding: 30px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.price .container .basic li:last-child::before{
+  content: '\f00d';
+  color: #ff0000;
+}
+.price .container .business {
+  background-color: #005bea;
+}
+.price .container .business * {
+  color: white;
+}
+.price .container .business button {
+  background-color: white;
+}
+.price .container .business button a {
+ color: #444;
+}
+.price .container div h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.price .container div p {
+  font-size: 14px;
+}
+.price .container span {
+  font-size: 32px;
+}
+.price .container ul {
+  list-style: none;
+  padding: 0 0 5px 0; 
+}
+.price .container li {
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  color: #444;
+  font-weight: 400; 
+}
+.price .container li::before {
+  font-family: "FontAwesome";
+  content: "\f00c";
+  color: #25d25e;
+  padding: 15px 15px 15px 0; 
+}
+.price .container div button {
+  margin: 20px;
+  border-radius: 30px;
+  background: #005bea;
+  border: none;
+}
+.price .container div button a {
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 23px;
+  color: #ffffff;
+  font-weight: 400; 
+  display: inline-block;
+  text-decoration: none;
+}

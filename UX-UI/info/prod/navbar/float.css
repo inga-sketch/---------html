@@ -1,0 +1,54 @@
+ body, ul {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 20px;
+}
+ul {
+    list-style: none;
+}
+.nav-user::after {
+    clear: both;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #222;
+}
+#navbar {
+    background-color: #556;
+    padding: 0 2.6%;
+}
+#navbar li {
+     float: left;
+}
+#navbar li a {
+    color: #ffffff;
+    padding:  31px 18px;
+    display: inline-block;
+}
+#navbar .nav-brand {
+    float:left;
+}
+#navbar .nav-brand li:first-child a {
+    font-size: 50px; 
+    padding: 15px;  
+} 
+#navbar .nav-main {
+    float: right;
+    margin-right: 11%;
+}
+#navbar .nav-main .phone {
+    font-weight: bold;
+    padding: 31px 48px;
+}
+#navbar .nav-user {
+    float: right;
+}
+#navbar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+ 
