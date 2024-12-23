@@ -82,9 +82,7 @@ a {
     }
 .greedy-nav ul li.burger:before {
     content: "4";
-    color: white;
     position: absolute;
-    background-color: red;
     display: inline;
     text-align: center;
     line-height: 1em;
@@ -124,9 +122,7 @@ a {
     }
     .greedy-nav ul li.burger:before {
         content: "6";
-        color: white;
         position: absolute;
-        background-color: red;
         display: inline-block;
         text-align: center;
         line-height: 1em;

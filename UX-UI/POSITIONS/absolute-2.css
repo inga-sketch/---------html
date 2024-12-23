@@ -11,8 +11,8 @@ body {
     width: 300px;
     padding: 5px;
     margin: 20px;
-position: relative;
-
+    position: relative;
+    
 }
 
 .cont .chaild-1 {
@@ -26,7 +26,8 @@ position: relative;
     height: 100px;
     width: 100px;
     position: absolute;
-    bottom:-105px;
-    right: -105px;   
+    bottom:0;
+    right: 0;  
+    
 }
 
