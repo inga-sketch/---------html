@@ -1,0 +1,36 @@
+body {
+    background-color: #333;
+    height: 2000px;
+    color: white;
+}
+
+.cont {
+    border: 5px solid black;
+    display: inline-block;
+    padding: 5px;
+    margin: 20px;
+}
+
+.cont div {
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 50px;
+}
+
+.cont .d-1 {
+    background-color: blueviolet;
+}
+
+.cont .d-2 {
+    background-color: rgb(132, 131, 132);
+    position: sticky;
+    top: 10px;
+    
+
+}
+
+.cont .d-3 {
+    background-color: rgb(226, 43, 43);
+}

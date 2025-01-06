@@ -20,13 +20,13 @@ body {
     background-color: #556;
     padding: 0 2.6%;
 }
-#navbar li {
+#navbar li{
      float: left;
 }
 #navbar li a {
     color: #ffffff;
     padding:  31px 18px;
-    display: inline-block;
+    display: block;
 }
 #navbar .nav-brand {
     float:left;

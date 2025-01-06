@@ -28,9 +28,10 @@ body {
     padding: 40px;
 }
 #navbar .nav-brand li:first-child a {
-    font-size: 50px;
-
-     
+    font-size: 50px;    
+}
+#navbar .nav-brand li:last-child  {
+    text-align: center;
 }
 #navbar ul {
     height: 0;
