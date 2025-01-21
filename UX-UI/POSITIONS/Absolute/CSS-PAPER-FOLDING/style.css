@@ -1,0 +1,136 @@
+body {
+    background-image: url(paper.png);
+    background-repeat: repeat;
+}
+.paper-effect {
+    width: 1000px;
+    height: 600px;
+    border: 10px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    perspective: 1000px;
+    
+}
+.paper-effect>div { 
+    width: 200px;
+    height: 600px;
+    float: left;
+    background-image: url(fall.jpg);   
+}
+
+.paper-effect>div:nth-child(2)  {
+    background-position: -200px 0;
+    transition:  all 0.2s ease;
+    
+}
+.paper-effect>div:nth-child(3)  {
+    background-position: -400px 0;
+    transition:  all 0.2s ease;
+}
+.paper-effect>div:nth-child(4)  {
+    background-position: -600px 0;
+    transition:  all 0.2s ease;
+}
+.paper-effect>div:nth-child(5)  {
+    background-position: -800px 0;
+    transition:  all 0.2s ease;
+
+}
+.paper-effect:hover>div:nth-child(1) {
+    filter: brightness(0.9);      
+}
+.paper-effect:hover>div:nth-child(2) {   
+    background-position: -200px 0;
+    transform: 
+               translateX(-51px)
+               rotateY(-45deg)
+               scaleY(1.07);               
+}
+.paper-effect:hover>div:nth-child(3) {
+    background: linear-gradient(to left, #1f1f1fc9, #3333334e), url(fall.jpg);
+    background-position: -400px 0;
+    transform: 
+    translateX(-110px)
+    rotateY(45deg)
+    scaleY(1.07); 
+      
+}
+.paper-effect:hover>div:nth-child(4) {
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.58), #00000000), url(fall.jpg);
+    background-position: -600px 0;
+    transform: 
+    translateX(-169px)
+    rotateY(-45deg)
+    scaleY(1.07);  
+}
+.paper-effect:hover>div:nth-child(5) {
+    background: linear-gradient(45deg, #000000a9, transparent), url(fall.jpg);
+    background-position: -800px 0;
+    transform: 
+    translateX(-229px)
+    rotateY(45deg)
+    scaleY(1.07);  
+}
+/*
+ .round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;margin: 0;
+    
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+.paper {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background-image: url(fall.jpg);
+    
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0,2);
+    perspective: 1000px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.paper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( to right, #fff, #eaeaea);
+    transform-origin: right;
+    transform: rotateY(0deg);
+    border-left: 1px solid #ccc;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+
+}
+.paper:hover::before {
+    transform: rotateY(-150deg);
+    box-shadow: inset -10px 0 15px rgb(0, 0, 0, 0.3);
+}
+.paper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( to left, #dcdcdc, #b0b0b0);
+    clip-path: circle(50% at rigth center);
+    transform-origin: left center;
+    transform: rotateY(0deg);
+    transition: transform 0.5s ease, opacity 0.6s ease;
+    opacity: 0;
+}
+.paper:hover::after {
+    transform: rotateY(-150deg);
+    opacity: 1;
+}
+*/
